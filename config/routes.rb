@@ -3,4 +3,8 @@ Rails.application.routes.draw do
 
   # list all tasks
   get 'tasks', to: 'tasks#index'
+
+  # show task details
+  get 'tasks/:id', to: 'tasks#show', as: 'task'
+
 end
