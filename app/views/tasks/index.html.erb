@@ -2,7 +2,7 @@
 
 <div>
 <% @tasks.each do |task| %>
-  <p>Title: <%= task.title %></p>
+  <p><%= link_to task.title, task_path(task) %></p>
   <p>Completed: <%= task.completed %></p>
   <br>
 <%end%>
